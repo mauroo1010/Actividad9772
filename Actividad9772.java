@@ -10,6 +10,11 @@ public class Actividad9772
 {
      public int cuantasPalabrasHayDeNLetras(ArrayList<String> palabras, int n) {
         int contador = 0;
+        for (String palabra : palabras) {
+            if (palabra.length() == n) {
+                contador++;
+            }
+        }
         return contador;
     }
 }
